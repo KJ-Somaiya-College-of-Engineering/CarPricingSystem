@@ -1,0 +1,113 @@
+import { Component } from '@angular/core';
+import * as $ from 'jquery';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'LoginApp';
+  hide = true;
+  UserValidate:string = "false";
+  PasswordValidate:string = "false";
+
+  ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void {
+  }
+
+  ngAfterViewInit() {
+  }
+
+  onLogin(UserName: string, Password: string)
+  {
+    // Check The UserName
+    this.UserValidate = this.checkUserNameValidation(UserName);
+    if(this.UserValidate != "true")
+    {
+      $('#divLoginErrorMsg').show();
+      $('#spnError').html(this.UserValidate);
+    }
+
+    // Check The Password
+    this.PasswordValidate = this.checkPasswordValidation(Password);
+    if(this.PasswordValidate != "true")
+    {
+      $('#divLoginErrorMsg').show();
+      $('#spnError').html(this.PasswordValidate);
+    }
+  }
+
+  checkUserNameValidation(value: string)
+  {
+    // Check For Empty
+    if(value == "")
+    {
+      return " OOPS!!! Please Enter UserName.";
+    }
+
+    // Check For Special Character
+    const isContainsSymbol = "@somaiya.edu";
+    if (!value.includes(isContainsSymbol)) {
+      return "UserName must contain @somaiya.edu";
+    }
+
+    return "true";
+  }
+
+  checkPasswordValidation(value: string)
+  {
+    var arrValue = value.split(",");
+    for(var i = 0; i < arrValue.length; i++)
+    {
+      var strValue = arrValue[i];
+      // Check For Empty
+      if(strValue == "") {
+        return "OOPS!!! Please Enter Password.";
+      }
+
+      // Check For WhiteScape
+      const isWhitespace = /^(?=.*\s)/;
+      if (isWhitespace.test(strValue)) {
+        return "Password must not contain Whitespaces.";
+      }
+      
+      // Check For Uppercase
+      const isContainsUppercase = /^(?=.*[A-Z])/;
+      if (!isContainsUppercase.test(strValue)) {
+        return "Password must have at least one Uppercase Character.";
+      }
+
+      // Check For Lowercase
+      const isContainsLowercase = /^(?=.*[a-z])/;
+      if (!isContainsLowercase.test(strValue)) {
+        return "Password must have at least one Lowercase Character.";
+      }
+
+      // Check For Digit
+      const isContainsNumber = /^(?=.*[0-9])/;
+      if (!isContainsNumber.test(strValue)) {
+        return "Password must contain at least one Digit.";
+      }
+
+      // Check For Special Character
+      const isContainsSymbol = /^(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])/;
+      if (!isContainsSymbol.test(strValue)) {
+        return "Password must contain at least one Special Symbol.";
+      }
+
+      // Check For 8 - 15 Character Long.
+      const isValidLength = /^.{8,15}$/;
+      if (!isValidLength.test(strValue)) {
+        return "Password must be 8-15 Characters Long.";
+      }
+    }
+    return "true";
+  }
+  reload()
+  {
+    this.ngOnInit();
+  }
+}

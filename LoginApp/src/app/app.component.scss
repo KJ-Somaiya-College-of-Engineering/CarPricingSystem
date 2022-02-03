@@ -1,0 +1,184 @@
+#divLogin {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.capbox {
+    background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 25px 0px 0px;
+	display: inline-block;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 21.500px;
+}
+.capbox-captcha {
+	font-style: italic;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.capbox-text {
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.CaptchaInput {
+    color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+	#divLogin {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	#divLogin {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	#divLogin {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	#divLogin {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+	}
+}

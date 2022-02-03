@@ -1,0 +1,39 @@
+<div id="divLogin">
+  <div class="loginPage loginBG">
+    <div class="loginModule">
+      <div class=" container-fluid login">
+        <h4>Welcome to Car Price Predictor</h4>
+        <div>
+          <div class="form-group mt-4">
+            <mat-form-field appearance="outline" style="width:100%">
+              <mat-label>Year</mat-label>
+              <input id="first" name="Year of Purchase" type="number">             
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="outline" style="width:100%">
+              <mat-label>Showroom Price (In lakhs: eg: 8/9/10..)</mat-label>
+              <input id="second" name="Present_Price" required="required">
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="outline" style="width:100%">
+              <mat-label>Kilometers Driven Till Date?</mat-label>
+              <input id="third" name="Kms_Driven" required="required">
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="outline" style="width:100%">
+              <mat-label>Are you A Dealer or Individual</mat-label>
+              <input id="fourth" name="Owner" required="required">
+            </mat-form-field>
+          </div>
+          <button id="sub" onClick="CalculatePrice()" type="submit">Calculate the Selling Price</button>
+        </div>
+        <div>
+          <span id="spnValue"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
